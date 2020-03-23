@@ -12,7 +12,7 @@ jobs:
       - run: yarn run test-expressions
       - store_artifacts:
           path: test/integration/expression-tests/index.html
-      #- run: yarn run test-unit
+      - run: yarn run test-unit
       # - command: |
       #   if [ "${CIRCLE_BRANCH}" == "master" ];
       #     then yarn run build-prod;
